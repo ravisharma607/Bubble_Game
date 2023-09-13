@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.5s;
+    user-select: none;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(217, 245, 217);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.box {
+    width: 90%;
+    height: 90%;
+    background-color: #ffff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.top {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(107, 238, 107);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.top .elem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.elem h2 {
+    font-size: 18px;
+}
+
+.elem .value {
+    font-size: 18px;
+    background-color: rgb(173, 248, 173);
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+.bottom {
+    width: 100%;
+    height: calc(100% - 50px);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ball {
+    height: 40px;
+    width: 40px;
+    background-color: rgb(38, 138, 38);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.ball:hover {
+    background-color: rgb(37, 104, 37);
+}
+
+.btn {
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: 1px solid green;
+    background-color: green;
+    color: #ffff;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    color: black;
+    background-color: transparent;
+}
+
+@media screen and (max-width:600px) {
+    .box {
+        width: 90%;
+        max-height: 80vh;
+        background-color: #ffff;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .bottom{
+        gap: 11px;
+    }
+    .top {
+        padding: 0 10px;
+    }
+    .elem h2 {
+        font-size: 15px;
+    }
+    .elem .value {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:300px) {
+    .elem h2 {
+        font-size: 12px;
+    }
+    .elem .value {
+        font-size: 12px;
+    }
+}
