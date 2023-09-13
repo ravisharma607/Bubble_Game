@@ -1,4 +1,4 @@
-let timer = 6;
+let timer = 60;
 let score = 0;
 let hitValue = 0;
 function incrScore() {
